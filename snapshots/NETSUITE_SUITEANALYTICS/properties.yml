@@ -1,0 +1,7 @@
+version: 2
+
+snapshots:
+  - name: pstg_companies
+    config:
+      enabled: true
+      tags: netsuite

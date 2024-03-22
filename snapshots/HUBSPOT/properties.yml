@@ -1,0 +1,7 @@
+version: 2
+
+snapshots:
+  - name: pstg_company
+    config:
+      enabled: true
+      tags: hubspot

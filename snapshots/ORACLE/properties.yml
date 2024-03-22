@@ -1,0 +1,7 @@
+version: 2
+
+snapshots:
+  - name: pstg_erp_ar_invoices_to_ns
+    config:
+      enabled: true
+      tags: oracle

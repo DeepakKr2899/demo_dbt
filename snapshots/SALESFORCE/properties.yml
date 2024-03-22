@@ -1,0 +1,7 @@
+version: 2
+
+snapshots:
+  - name: pstg_account
+    config:
+      enabled: true
+      tags: salesforce
