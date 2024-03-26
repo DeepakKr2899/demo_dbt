@@ -1,0 +1,7 @@
+version: 2
+
+snapshots:
+  - name: pstg_websites_full
+    config:
+      enabled: true
+      tags: ecomm_cwd_smd_dbo

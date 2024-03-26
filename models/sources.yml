@@ -1,0 +1,68 @@
+version: 2
+
+sources:
+  - name: sources_sharepoint
+    database: "{{ target.name }}_sources"
+    schema: sharepoint
+    tags: ["sharepoint"]
+    tables:
+      - name: finance_payments
+
+  - name: sources_hubspot
+    database: "{{ target.name }}_sources"
+    schema: hubspot
+    tags: ["hubspot"]
+    tables:
+      - name: company
+
+  - name: reference_overrides
+    database: "reference"
+    schema: overrides
+    tags: ["overrides"]
+    tables:
+      - name: mdm_max_entity_id
+      - name: mdm_override
+      - name: mdm_tmp_entity_hist
+
+  - name: reference_excel_sources
+    database: "reference"
+    schema: excel_sources
+    tags: ["excel_sources"]
+    tables:
+      - name: finance_customers_list
+      - name: ecomm_website_all
+
+  - name: sources_oracle_xws
+    database: "{{ target.name }}_sources"
+    schema: oracle_xws
+    tags: ["oracle_xws"]
+    tables:
+      - name: erp_ar_invoices_to_ns
+
+  - name: sources_salesforce
+    database: "{{ target.name }}_sources"
+    schema: salesforce
+    tags: ["salesforce"]
+    tables:
+      - name: account
+
+  - name: sources_recurly
+    database: "{{ target.name }}_sources"
+    schema: recurly
+    tags: ["recurly"]
+    tables:
+      - name: account_history
+
+  - name: sources_netsuite
+    database: "{{ target.name }}_sources"
+    schema: netsuite_suiteanalytics
+    tags: ["netsuite_suiteanalytics"]
+    tables:
+      - name: companies
+
+  - name: sources_ecomm_cwd_smd_dbo
+    database: "{{ target.name }}_sources"
+    schema: ecomm_cwd_smd_dbo
+    tags: ["ecomm_cwd_smd_dbo"]
+    tables:
+      - name: websites_full

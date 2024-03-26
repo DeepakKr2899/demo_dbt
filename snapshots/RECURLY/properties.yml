@@ -1,0 +1,7 @@
+version: 2
+
+snapshots:
+  - name: pstg_account_history
+    config:
+      enabled: true
+      tags: recurly
